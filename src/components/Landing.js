@@ -20,7 +20,7 @@ export default function Landing() {
                     </div>
                 </a>
                 <div className="fixed top-0 -z-10 h-96 md:h-screen w-screen">
-                    <img className="object-cover h-full lg:w-screen" alt="hero" src={hero}></img>
+                    <img className="object-cover h-full lg:w-screen" alt="" src={hero}></img>
                 </div>
             </div>
 
