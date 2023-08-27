@@ -56,6 +56,9 @@ export default function Navbar() {
 
                 <ul id="menu-desktop" className='max-sm:hidden flex gap-8 text-sm text-white'>
                     <li>
+                        <a href='/' className='hover:text-lime-400 transition-all'>Beranda</a>
+                    </li>
+                    <li>
                         <a href='/profil-usaha' className='hover:text-lime-400 transition-all'>Profil Usaha</a>
                     </li>
                     <li>
@@ -71,6 +74,7 @@ export default function Navbar() {
             </div>
 
             <ul id="menu-mobile" className={`font-sans w-screen px-10 flex flex-col gap-4 h-screen pt-20 font-semibold bg-white transition-all fixed ${menu ? "opacity-100" : "opacity-0 hidden"} lg:hidden z-10`}>
+                <li><a href='/'>Beranda</a></li>
                 <li><a href='/profil-usaha'>Profil Usaha</a></li>
                 <li><a href='/unit-usaha'>Unit Usaha</a></li>
                 <li><a href='/galeri'>Galeri</a></li>

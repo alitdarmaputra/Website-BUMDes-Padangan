@@ -1,6 +1,5 @@
 import hero from "../assets/hero.jpg"
 import { BiChevronRight } from "react-icons/bi"
-import Footer from "./Footer"
 import Perdagangan from "../assets/perdagangan.jpeg"
 import Jasa from "../assets/jasa.jpeg"
 import Perkebunan from "../assets/perkebunan.jpeg"
@@ -77,8 +76,6 @@ export default function Landing() {
                 </div>
                 <iframe title="bumdes-location" className="mt-10 md:mt-0 w-screen px-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.456056651572!2d115.01109147373099!3d-8.356716391680177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2291fd79136e9%3A0xb45f1d5f1cbb36d8!2sBUMDES%20PADANGAN!5e0!3m2!1sid!2sid!4v1692636856292!5m2!1sid!2sid" width="600" height="450" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-
-            <Footer />
         </>
     )
 }
