@@ -5,7 +5,7 @@ import Struktur from "../assets/struktur-organisasi.png"
 export default function Profile() {
     return (
         <>
-            <div className="bg-red-50 h-32 overflow-hidden">
+            <div className="bg-red-50 h-48 overflow-hidden">
                 <img src={mountain} className="mb-20" alt="mountain"></img>
             </div>
             <div id="profile" className="px-36 py-10">
