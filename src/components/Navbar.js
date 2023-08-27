@@ -67,9 +67,6 @@ export default function Navbar() {
                     <li>
                         <a href='/galeri' className='hover:text-lime-400 transition-all'>Galeri</a>
                     </li>
-                    <li>
-                        <a href='/kontak' className='hover:text-lime-400 transition-all'>Kontak</a>
-                    </li>
                 </ul>
             </div>
 
@@ -78,7 +75,6 @@ export default function Navbar() {
                 <li><a href='/profil-usaha'>Profil Usaha</a></li>
                 <li><a href='/unit-usaha'>Unit Usaha</a></li>
                 <li><a href='/galeri'>Galeri</a></li>
-                <li><a href='/kontak'>Kontak</a></li>
             </ul>
         </>
     )

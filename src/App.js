@@ -3,6 +3,7 @@ import Landing from "./components/Landing";
 import Layout from "./components/Layout";
 import Profile from "./components/Profile";
 import UnitUsaha from "./components/UnitUsaha";
+import Galeri from "./components/Galeri";
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
                     <Route path="/" element={<Landing />}></Route>
                     <Route path="/profil-usaha" element={<Profile />}></Route>
                     <Route path="/unit-usaha" element={<UnitUsaha />}></Route>
+                    <Route path="/galeri" element={<Galeri />}></Route>
                 </Route>
             </Routes>
         </>
