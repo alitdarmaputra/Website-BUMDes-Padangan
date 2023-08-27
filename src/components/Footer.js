@@ -31,7 +31,7 @@ export default function Footer() {
                     <p className="text-sm text-slate-700">081237770630</p>
                 </div>
             </div>
-            <div className="h-20 bg-black text-white flex justify-center items-center text-sm">
+            <div className="h-20 bg-black text-white flex justify-center items-center text-xs sm:text-sm">
                 <p>© BUMDes Sejahtera Mandiri Padangan, All rights reserved</p>
             </div>
         </>

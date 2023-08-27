@@ -7,13 +7,20 @@ export default function Navbar() {
     const [menuBtnColor, setMenuBtnColor] = useState("#fff");
 
     const handleMenuToggle = () => {
+        if (!menu && window.scrollY < 300) {
+            setMenuBtnColor("#000")
+        }
+
+        if (menu && window.scrollY < 300) {
+            setMenuBtnColor("#fff")
+        }
         setMenu(!menu);
     }
-    
+
     const scrollToTop = () => {
         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
     }
-    
+
     useEffect(() => {
         var navbar = document.getElementById("navbar");
         var menuDesktop = document.getElementById("menu-desktop");
@@ -47,7 +54,7 @@ export default function Navbar() {
                     <Hamburger size={25} color={menuBtnColor}></Hamburger>
                 </div>
 
-                <ul id="menu-desktop" className='max-sm:hidden flex gap-8 text-sm text-slate-800'>
+                <ul id="menu-desktop" className='max-sm:hidden flex gap-8 text-sm text-white'>
                     <li>
                         <a href='/profil-usaha' className='hover:text-lime-400 transition-all'>Profil Usaha</a>
                     </li>
