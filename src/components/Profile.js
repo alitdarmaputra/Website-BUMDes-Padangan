@@ -5,10 +5,11 @@ import Struktur from "../assets/struktur-organisasi.png"
 export default function Profile() {
     return (
         <>
-            <div className="bg-red-50 h-48 overflow-hidden">
-                <img src={mountain} className="mb-20" alt="mountain"></img>
+            <div className="md:h-48 overflow-hidden">
+                <img src={mountain} alt="mountain"></img>
             </div>
-            <div id="profile" className="px-36 py-10">
+
+            <div id="profile" className="md:px-36 px-10 py-10">
                 <h1 className="text-3xl font-bold text-slate-950">Profil Usaha</h1>
                 <p className="mt-5 text-base text-slate-700 leading-loose">BUMDes Sejahtera Mandiri Padangan merupakan lembaga ekonomi yang dikelola oleh dan untuk kepentingan masyarakat Desa Padangan. Kegiatan usaha BUMDes yang dilakukan sangat beragam, meliputi penjualan produk-produk pertanian dan peternakan, jasa pelayanan masyarakat, serta usaha-usaha lain yang dapat meningkatkan pendapatan dan penghidupan masyarakat Desa Padangan.</p>
                 <img alt="kantor-bumdes" className="mt-5" src={ KantorBumdes }></img>

@@ -3,10 +3,11 @@ import mountain from "../assets/mountain.jpg"
 export default function UnitUsaha() {
     return (
         <>
-            <div className="bg-red-50 h-48 overflow-hidden">
-                <img src={mountain} className="mb-20" alt="mountain"></img>
+            <div className="md:h-48 overflow-hidden">
+                <img src={mountain} alt="mountain"></img>
             </div>
-            <div id="unit-usaha" className="px-36 py-10 leading-loose">
+
+            <div id="unit-usaha" className="md:px-36 px-10 py-10 leading-loose">
                 <h1 className="text-3xl font-bold text-slate-950">Unit Usaha</h1>
                 <ol className="list-decimal list-inside mt-5">
                     <li className="font-semibold">Perdagangan</li>

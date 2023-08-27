@@ -9,13 +9,13 @@ import mountain from "../assets/mountain.jpg"
 export default function Galeri() {
     return (
         <>
-            <div className="bg-red-50 h-48 overflow-hidden">
-                <img src={mountain} className="mb-20" alt="mountain"></img>
+            <div className="md:h-48 overflow-hidden">
+                <img src={mountain} alt="mountain"></img>
             </div>
             
             
-            <h1 className="px-36 py-10 text-3xl font-bold text-slate-950">Galeri</h1>
-            <div id="galeri" className="px-36 grid grid-cols-2 md:grid-cols-3 gap-4">
+            <h1 className="md:px-36 px-10 md:py-10 py-5 text-3xl font-bold text-slate-950">Galeri</h1>
+            <div id="galeri" className="md:px-36 px-10 grid grid-cols-2 md:grid-cols-3 gap-4">
                 <div>
                     <img className="h-auto max-w-full rounded-lg" src={hero} alt="pertanian"></img>
                 </div>
