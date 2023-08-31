@@ -30,26 +30,26 @@ export default function Landing() {
                     <h2 className="font-semibold text-md mt-3">BUMDes Sejahtera Mandiri Padangan</h2>
                 </div>
                 <div className="mt-10 flex flex-col md:flex-row gap-5 justify-center items-center">
-                    <div className="unit-usaha-list relative overflow-hidden w-80 h-96 bg-cover rounded-lg" style={{ backgroundImage: 'url("/perdagangan.jpeg")' }}>
+                    <a href="/unit-usaha" className="unit-usaha-list relative overflow-hidden w-80 h-96 bg-cover rounded-lg" style={{ backgroundImage: 'url("/perdagangan.jpeg")' }}>
                         <div className="w-80 h-96 top-0 left-0 bottom-0 right-0 bg-gradient-to-t from-black opacity-40 hover:opacity-0 transition-all"></div>
                         <p className="z-20 absolute bottom-3 left-3 font-bold text-white text-xl">Perdagangan</p>
-                    </div>
-                    <div className="unit-usaha-list relative overflow-hidden w-80 h-96 bg-cover rounded-lg" style={{ backgroundImage: 'url("/jasa.jpeg")' }}>
+                    </a>
+                    <a href="/unit-usaha" className="unit-usaha-list relative overflow-hidden w-80 h-96 bg-cover rounded-lg" style={{ backgroundImage: 'url("/jasa.jpeg")' }}>
                         <div className="w-80 h-96 top-0 left-0 bottom-0 right-0 bg-gradient-to-t from-black opacity-40 hover:opacity-0 transition-all"></div>
                         <p className="z-20 absolute bottom-3 left-3 font-bold text-white text-xl">Jasa</p>
-                    </div>
-                    <div className="unit-usaha-list relative overflow-hidden w-80 h-96 bg-cover rounded-lg" style={{ backgroundImage: 'url("/perkebunan.jpeg")' }}>
+                    </a>
+                    <a href="/unit-usaha" className="unit-usaha-list relative overflow-hidden w-80 h-96 bg-cover rounded-lg" style={{ backgroundImage: 'url("/perkebunan.jpeg")' }}>
                         <div className="w-80 h-96 top-0 left-0 bottom-0 right-0 bg-gradient-to-t from-black opacity-40 hover:opacity-0 transition-all"></div>
                         <p className="z-20 absolute bottom-3 left-3 font-bold text-white text-xl">Perkebunan</p>
-                    </div>
-                    <div className="unit-usaha-list relative overflow-hidden w-80 h-96 bg-cover rounded-lg" style={{ backgroundImage: 'url("/peternakan.jpeg")' }}>
+                    </a>
+                    <a href="/unit-usaha" className="unit-usaha-list relative overflow-hidden w-80 h-96 bg-cover rounded-lg" style={{ backgroundImage: 'url("/peternakan.jpeg")' }}>
                         <div className="w-80 h-96 top-0 left-0 bottom-0 right-0 bg-gradient-to-t from-black opacity-40 hover:opacity-0 transition-all"></div>
                         <p className="z-20 absolute bottom-3 left-3 font-bold text-white text-xl">Peternakan</p>
-                    </div>
-                    <div className="unit-usaha-list relative overflow-hidden w-80 h-96 bg-cover rounded-lg" style={{ backgroundImage: 'url("/aqua-gelas.webp")' }}>
+                    </a>
+                    <a href="/unit-usaha" className="unit-usaha-list relative overflow-hidden w-80 h-96 bg-cover rounded-lg" style={{ backgroundImage: 'url("/aqua-gelas.webp")' }}>
                         <div className="w-80 h-96 top-0 left-0 bottom-0 right-0 bg-gradient-to-t from-black opacity-40 hover:opacity-0 transition-all"></div>
                         <p className="z-20 absolute bottom-3 left-3 font-bold text-white text-xl">Unit Usaha Air Minum</p>
-                    </div>
+                    </a>
                 </div>
             </div>
 
@@ -61,6 +61,6 @@ export default function Landing() {
                 </div>
                 <iframe title="bumdes-location" className="mt-10 md:mt-0 w-screen px-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.456056651572!2d115.01109147373099!3d-8.356716391680177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2291fd79136e9%3A0xb45f1d5f1cbb36d8!2sBUMDES%20PADANGAN!5e0!3m2!1sid!2sid!4v1692636856292!5m2!1sid!2sid" width="600" height="450" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        </div>
+        </div >
     )
 }

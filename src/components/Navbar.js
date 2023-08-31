@@ -1,6 +1,7 @@
 import Hamburger from 'hamburger-react'
 import { useEffect, useState } from 'react'
 import Logo from "../assets/logo.png"
+import { BsArrowUpShort } from "react-icons/bs"
 
 export default function Navbar() {
     const [menu, setMenu] = useState(false);
@@ -25,17 +26,20 @@ export default function Navbar() {
         var navbar = document.getElementById("navbar");
         var menuDesktop = document.getElementById("menu-desktop");
         var menuMobile = document.getElementById("menu-mobile");
+        var scrollUp = document.getElementById("scroll-up");
 
         window.addEventListener("scroll", () => {
             var scroll = window.scrollY;
             if (scroll > 300) {
                 navbar.style.backgroundColor = "rgba(277,277,277,1)"
+                scrollUp.style.scale = "1";
                 navbar.style.boxShadow = "0px 1px 20px -12px rgba(0,0,0,0.82)";
                 menuDesktop.style.color = "black"
                 menuMobile.style.color = "black"
                 setMenuBtnColor("#000")
             } else {
                 navbar.style.backgroundColor = "rgba(0,0,0,0)"
+                scrollUp.style.scale = "0";
                 navbar.style.boxShadow = "0 0"
                 menuDesktop.style.color = "white"
                 menuMobile.style.color = "black"
@@ -46,6 +50,9 @@ export default function Navbar() {
 
     return (
         <>
+            <div id='scroll-up' className="hover:cursor-pointer w-12 h-12 fixed rounded-full bg-white right-5 bottom-5 flex items-center justify-center shadow-lg z-50 transition-all" onClick={scrollToTop}>
+                <BsArrowUpShort className="text-3xl"></BsArrowUpShort>
+            </div>
             <div id="navbar" className="w-full h-14 fixed justify-between flex items-center px-10 z-20 transition-all">
                 <div id="logo" className="h-10 w-10 hover:cursor-pointer" onClick={scrollToTop}>
                     <img src={Logo} className="object-cover" alt='logo'></img>
