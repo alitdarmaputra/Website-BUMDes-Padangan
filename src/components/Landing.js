@@ -1,14 +1,9 @@
 import hero from "../assets/hero.jpg"
 import { BiChevronRight } from "react-icons/bi"
-import Perdagangan from "../assets/perdagangan.jpeg"
-import Jasa from "../assets/jasa.jpeg"
-import Perkebunan from "../assets/perkebunan.jpeg"
-import Peternakan from "../assets/peternakan.jpeg"
-import AirMinum from "../assets/aqua-gelas.webp"
 
 export default function Landing() {
     return (
-        <>
+        <div>
             <div id="hero" className="w-full flex flex-col text-center md:text-left content-center pt-28 md:pt-48 md:leading-loose">
                 <h3 className="font-semibold text-md text-white md:ml-16">Badan Usaha Milik Desa</h3>
                 <h1 className="text-2xl font-semibold mt-1 text-white md:ml-16 md:text-4xl">Sejahtera Mandiri <span className="md:text-lime-400">Padangan</span></h1>
@@ -30,40 +25,30 @@ export default function Landing() {
             </div>
 
             <div id="unit-usaha" className="py-14 md:py-28 z-10 bg-white">
-                <div id="section-title" className="text-center w-screen">
+                <div id="section-title" className="text-center">
                     <h1 className="font-semibold text-2xl md:text-3xl text-lime-900">Unit Usaha</h1>
                     <h2 className="font-semibold text-md mt-3">BUMDes Sejahtera Mandiri Padangan</h2>
                 </div>
                 <div className="mt-10 flex flex-col md:flex-row gap-5 justify-center items-center">
-                    <div className="w-80 h-80 bg-lime-800 rounded-lg flex content-end text-xl md:text-lg">
-                        <div className="px-4 py-4 absolute flex items-end bg-black w-80 md:w-60 h-80 rounded-lg hover:bg-opacity-0 bg-opacity-40 transition-all">
-                            <h3 className="text-white font-bold">Perdagangan</h3>
-                        </div>
-                        <img src={Perdagangan} className="object-cover rounded-lg" alt=""></img>
+                    <div className="unit-usaha-list relative overflow-hidden w-80 h-96 bg-cover rounded-lg" style={{ backgroundImage: 'url("/perdagangan.jpeg")' }}>
+                        <div className="w-80 h-96 top-0 left-0 bottom-0 right-0 bg-gradient-to-t from-black opacity-40 hover:opacity-0 transition-all"></div>
+                        <p className="z-20 absolute bottom-3 left-3 font-bold text-white text-xl">Perdagangan</p>
                     </div>
-                    <div className="w-80 h-80 bg-lime-800 rounded-lg flex content-end text-xl md:text-lg">
-                        <div className="px-4 py-4 absolute flex items-end bg-black w-80 md:w-60 h-80 rounded-lg hover:bg-opacity-0 bg-opacity-40 transition-all">
-                            <h3 className="text-white font-bold">Jasa</h3>
-                        </div>
-                        <img src={Jasa} className="object-cover rounded-lg" alt=""></img>
+                    <div className="unit-usaha-list relative overflow-hidden w-80 h-96 bg-cover rounded-lg" style={{ backgroundImage: 'url("/jasa.jpeg")' }}>
+                        <div className="w-80 h-96 top-0 left-0 bottom-0 right-0 bg-gradient-to-t from-black opacity-40 hover:opacity-0 transition-all"></div>
+                        <p className="z-20 absolute bottom-3 left-3 font-bold text-white text-xl">Jasa</p>
                     </div>
-                    <div className="w-80 h-80 bg-lime-800 rounded-lg flex content-end text-xl md:text-lg">
-                        <div className="px-4 py-4 absolute flex items-end bg-black w-80 md:w-60 h-80 rounded-lg hover:bg-opacity-0 bg-opacity-40 transition-all">
-                            <h3 className="text-white font-bold">Perkebunan</h3>
-                        </div>
-                        <img src={Perkebunan} className="object-fill rounded-lg" alt=""></img>
+                    <div className="unit-usaha-list relative overflow-hidden w-80 h-96 bg-cover rounded-lg" style={{ backgroundImage: 'url("/perkebunan.jpeg")' }}>
+                        <div className="w-80 h-96 top-0 left-0 bottom-0 right-0 bg-gradient-to-t from-black opacity-40 hover:opacity-0 transition-all"></div>
+                        <p className="z-20 absolute bottom-3 left-3 font-bold text-white text-xl">Perkebunan</p>
                     </div>
-                    <div className="w-80 h-80 bg-lime-800 rounded-lg flex content-end text-xl md:text-lg">
-                        <div className="px-4 py-4 absolute flex items-end bg-black w-80 md:w-60 h-80 rounded-lg hover:bg-opacity-0 bg-opacity-40 transition-all">
-                            <h3 className="text-white font-bold">Peternakan</h3>
-                        </div>
-                        <img src={Peternakan} className="object-cover rounded-lg" alt=""></img>
+                    <div className="unit-usaha-list relative overflow-hidden w-80 h-96 bg-cover rounded-lg" style={{ backgroundImage: 'url("/peternakan.jpeg")' }}>
+                        <div className="w-80 h-96 top-0 left-0 bottom-0 right-0 bg-gradient-to-t from-black opacity-40 hover:opacity-0 transition-all"></div>
+                        <p className="z-20 absolute bottom-3 left-3 font-bold text-white text-xl">Peternakan</p>
                     </div>
-                    <div className="w-80 h-80 bg-lime-800 rounded-lg flex content-end text-xl md:text-lg">
-                        <div className="px-4 py-4 absolute flex items-end bg-black w-80 h-80 md:w-60 rounded-lg hover:bg-opacity-0 bg-opacity-40 transition-all">
-                            <h3 className="text-white font-bold">Unit Usaha Air Minum</h3>
-                        </div>
-                        <img src={AirMinum} className="object-cover rounded-lg" alt=""></img>
+                    <div className="unit-usaha-list relative overflow-hidden w-80 h-96 bg-cover rounded-lg" style={{ backgroundImage: 'url("/aqua-gelas.webp")' }}>
+                        <div className="w-80 h-96 top-0 left-0 bottom-0 right-0 bg-gradient-to-t from-black opacity-40 hover:opacity-0 transition-all"></div>
+                        <p className="z-20 absolute bottom-3 left-3 font-bold text-white text-xl">Unit Usaha Air Minum</p>
                     </div>
                 </div>
             </div>
@@ -76,6 +61,6 @@ export default function Landing() {
                 </div>
                 <iframe title="bumdes-location" className="mt-10 md:mt-0 w-screen px-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.456056651572!2d115.01109147373099!3d-8.356716391680177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2291fd79136e9%3A0xb45f1d5f1cbb36d8!2sBUMDES%20PADANGAN!5e0!3m2!1sid!2sid!4v1692636856292!5m2!1sid!2sid" width="600" height="450" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        </>
+        </div>
     )
 }

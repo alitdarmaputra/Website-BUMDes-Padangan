@@ -3,7 +3,7 @@ import Logo from "../assets/logo.png"
 export default function Footer() {
     return (
         <>
-            <div className="bg-white text-black px-10 md:px-36 py-10 md:py-16 flex flex-col md:justify-between border-black bor md:flex-row gap-8">
+            <div className="bg-white text-black px-10 md:px-36 py-10 md:py-16 flex flex-col md:justify-between md:flex-row gap-8">
                 <div id="left-footer">
                     <div className="flex font-semibold text-xl gap-5">
                         <img src={Logo} alt="logo" className="w-20 h-20"></img>
